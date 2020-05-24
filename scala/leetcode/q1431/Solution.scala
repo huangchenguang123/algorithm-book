@@ -1,7 +1,5 @@
 package leetcode.q1431
 
-import scala.math.Ordering
-
 class Solution {}
 
 object Solution {
@@ -14,17 +12,15 @@ object Solution {
   }
 
   /**
-   * date: 2020/5/21
-   * param:
-   * return:
-   * author: chenguang
-   * desc: 先找出一个最大值，再循环判断，找出最大值使用IterableOnce.max()
+   * @date: 2020/5/21
+   * @author: chenguang
+   * @desc: 先找出一个最大值，再循环判断，找出最大值使用IterableOnce.max()
    */
   /**
-   * date: 2020/5/21
-   * result: true
-   * time: 85%
-   * memory usage: 100%
+   * @date: 2020/5/21
+   * @result: true
+   * @time: 85%
+   * @memory usage: 100%
    */
   def kidsWithCandies(candies: Array[Int], extraCandies: Int): Array[Boolean] = {
     val max = candies.max

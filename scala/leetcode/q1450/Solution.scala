@@ -13,17 +13,15 @@ object Solution {
   }
 
   /**
-   * date: 2020/5/21
-   * param:
-   * return:
-   * author: chenguang
-   * desc: 顺序遍历实现
+   * @date: 2020/5/21
+   * @author: chenguang
+   * @desc: 顺序遍历实现
    */
   /**
-   * date: 2020/5/21
-   * result: true
-   * time: 100%
-   * memory usage: 100%
+   * @date: 2020/5/21
+   * @result: true
+   * @time: 100%
+   * @memory usage: 100%
    */
   def busyStudent(startTime: Array[Int], endTime: Array[Int], queryTime: Int): Int = {
     var times = 0
@@ -38,17 +36,15 @@ object Solution {
   }
 
 //    /**
-//     * date: 2020/5/21
-//     * param:
-//     * return:
-//     * author: chenguang
-//     * desc: ArrayOps.zip特性，将2个数组合并成为一个元组的数组
+//     * @date: 2020/5/21
+//     * @author: chenguang
+//     * @desc: ArrayOps.zip特性，将2个数组合并成为一个元组的数组
 //     */
 //    /**
-//     * date: 2020/5/21
-//     * result: true
-//     * time: 33%
-//     * memory usage: 100%
+//     * @date: 2020/5/21
+//     * @result: true
+//     * @time: 33%
+//     * @memory usage: 100%
 //     */
 //    def busyStudent(startTime: Array[Int], endTime: Array[Int], queryTime: Int): Int = {
 //      val xx = startTime.zip(endTime)

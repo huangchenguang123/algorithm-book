@@ -11,17 +11,15 @@ object Solution {
   }
 
   /**
-   * date: 2020/5/22
-   * param:
-   * return:
-   * author: chenguang
-   * desc: 模拟
+   * @date: 2020/5/22
+   * @author: chenguang
+   * @desc: 模拟
    */
   /**
-   * date: 2020/5/22
-   * result: true
-   * time: 100%
-   * memory usage: 100%
+   * @date: 2020/5/22
+   * @result: true
+   * @time: 100%
+   * @memory usage: 100%
    */
   def subtractProductAndSum(n: Int): Int = {
     var number = n

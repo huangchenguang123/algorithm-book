@@ -13,17 +13,15 @@ object Solution {
   }
 
   /**
-   * date: 2020/5/23
-   * param:
-   * return:
-   * author: chenguang
-   * desc: 利用ListBuffer处理，scala中的List不可变
+   * @date: 2020/5/23
+   * @author: chenguang
+   * @desc: 利用ListBuffer处理，scala中的List不可变
    */
   /**
-   * date: 2020/5/23
-   * result: true
-   * time: 100%
-   * memory usage: 100%
+   * @date: 2020/5/23
+   * @result: true
+   * @time: 100%
+   * @memory usage: 100%
    */
   def decompressRLElist(nums: Array[Int]): Array[Int] = {
     val list = new ListBuffer[Int]

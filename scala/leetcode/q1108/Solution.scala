@@ -11,34 +11,30 @@ object Solution {
   }
 
 //  /**
-//   * date: 2020/5/22
-//   * param:
-//   * return:
-//   * author: chenguang
-//   * desc: String.replaceAll()，原理利用StringBuilder操作
+//   * @date: 2020/5/22
+//   * @author: chenguang
+//   * @desc: String.replaceAll()，原理利用StringBuilder操作
 //   */
 //  /**
-//   * date: 2020/5/22
-//   * result: true
-//   * time: 50%
-//   * memory usage: 100%
+//   * @date: 2020/5/22
+//   * @result: true
+//   * @time: 50%
+//   * @memory usage: 100%
 //   */
 //  def defangIPaddr(address: String): String = {
 //    address.replaceAll("\\.", "[.]")
 //  }
 
   /**
-   * date: 2020/5/22
-   * param:
-   * return:
-   * author: chenguang
-   * desc: StringBuilder手动实现
+   * @date: 2020/5/22
+   * @author: chenguang
+   * @desc: StringBuilder手动实现
    */
   /**
-   * date: 2020/5/22
-   * result: true
-   * time: 70%
-   * memory usage: 100%
+   * @date: 2020/5/22
+   * @result: true
+   * @time: 70%
+   * @memory usage: 100%
    */
   def defangIPaddr(address: String): String = {
     val sb = new StringBuilder()

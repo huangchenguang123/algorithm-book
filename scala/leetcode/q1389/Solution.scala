@@ -12,17 +12,15 @@ object Solution {
   }
 
   /**
-   * date: 2020/5/23
-   * param:  
-   * return: 
-   * author: chenguang 
-   * desc: 模拟
+   * @date: 2020/5/23
+   * @author: chenguang
+   * @desc: 模拟
    */
   /**
-   * date: 2020/5/23
-   * result: true
-   * time: 60%
-   * memory usage: 100%
+   * @date: 2020/5/23
+   * @result: true
+   * @time: 60%
+   * @memory usage: 100%
    */
   def createTargetArray(nums: Array[Int], index: Array[Int]): Array[Int] = {
     val target = new Array[Int](nums.length)

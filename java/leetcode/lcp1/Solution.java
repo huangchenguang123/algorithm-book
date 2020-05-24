@@ -11,17 +11,15 @@ public class Solution {
     }
 
     /**
-     * date: 2020/5/22
-     * param:
-     * return:
-     * author: chenguang
-     * desc: 直接的解法，因为题目只有3个数，可以直接if，但是没有必要
+     * @date: 2020/5/22
+     * @author: chenguang
+     * @desc: 直接的解法，因为题目只有3个数，可以直接if，但是没有必要
      */
     /**
-     * date: 2020/5/22
-     * result: true
-     * time: 100%
-     * memory usage: 5%
+     * @date: 2020/5/22
+     * @result: true
+     * @time: 100%
+     * @memory usage: 5%
      */
     public int game(int[] guess, int[] answer) {
         int times = 0;
