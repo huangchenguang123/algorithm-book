@@ -7,7 +7,7 @@ object Solution {
   def main(args: Array[String]): Unit = {
     val nums = Array(8, 1, 2, 2, 3)
     val result = smallerNumbersThanCurrent(nums)
-    print("[" + result.mkString(",") + "]")
+    print(result.mkString("[", ",", "]"))
   }
 
   /**

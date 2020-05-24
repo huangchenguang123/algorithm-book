@@ -8,7 +8,7 @@ object Solution {
     val candies = Array(2, 3, 5, 1, 3)
     val extraCandies = 3
     val result = kidsWithCandies(candies, extraCandies)
-    print("[" + result.mkString(",") + "]")
+    print(result.mkString("[", ",", "]"))
   }
 
   /**

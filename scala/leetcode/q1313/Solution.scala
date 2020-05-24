@@ -9,7 +9,7 @@ object Solution {
   def main(args: Array[String]): Unit = {
     val nums = Array(1, 2, 3, 4)
     val result = decompressRLElist(nums)
-    print("[" + result.mkString(",") + "]")
+    print(result.mkString("[", ",", "]"))
   }
 
   /**

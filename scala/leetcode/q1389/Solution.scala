@@ -8,7 +8,7 @@ object Solution {
     val nums = Array(0, 1, 2, 3, 4)
     val index = Array(0, 1, 2, 2, 1)
     val result = createTargetArray(nums, index)
-    print("[" + result.mkString(",") + "]")
+    print(result.mkString("[", ",", "]"))
   }
 
   /**
