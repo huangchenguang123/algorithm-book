@@ -13,15 +13,15 @@ object Solution {
   }
 
   /**
-   * date: 2020/5/25
-   * author: chenguang
-   * desc: 利用栈的特性，两两消除
+   * @date: 2020/5/25
+   * @author: chenguang
+   * @desc: 利用栈的特性，两两消除
    */
   /**
-   * date: 2020/5/25
-   * result: true
-   * time: 50%
-   * memory usage: 100%
+   * @date: 2020/5/25
+   * @result: true
+   * @time: 50%
+   * @memory usage: 100%
    */
   def balancedStringSplit(s: String): Int = {
     val stack = mutable.Stack[Char]()

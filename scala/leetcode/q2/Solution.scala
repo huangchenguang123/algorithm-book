@@ -9,15 +9,15 @@ object Solution {
   }
 
   /**
-   * date: 2020/5/31
-   * author: chenguang
-   * desc: 模拟加法
+   * @date: 2020/5/31
+   * @author: chenguang
+   * @desc: 模拟加法
    */
   /**
-   * date: 2020/5/31
-   * result: true
-   * time: 70%
-   * memory usage: 100%
+   * @date: 2020/5/31
+   * @result: true
+   * @time: 70%
+   * @memory usage: 100%
    */
   def addTwoNumbers(l1: ListNode, l2: ListNode): ListNode = {
     var left = l1

@@ -12,15 +12,15 @@ object Solution {
   }
 
   /**
-   * date: 2020/5/31
-   * author: chenguang
-   * desc: 2个数组交换之后相等，只要数字相等即可。这里利用了^的特性，相同数字亦或为0
+   * @date: 2020/5/31
+   * @author: chenguang
+   * @desc: 2个数组交换之后相等，只要数字相等即可。这里利用了^的特性，相同数字亦或为0
    */
   /**
-   * date: 2020/5/31
-   * result: true
-   * time: 100%
-   * memory usage: 100%
+   * @date: 2020/5/31
+   * @result: true
+   * @time: 100%
+   * @memory usage: 100%
    */
   def canBeEqual(target: Array[Int], arr: Array[Int]): Boolean = {
     var temp = 0;
