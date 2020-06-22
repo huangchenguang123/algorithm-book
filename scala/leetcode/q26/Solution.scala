@@ -10,10 +10,9 @@ object Solution {
     print(nums.mkString("[", ",", "]"))
   }
 
-
   /**
-   * @author : chenguang
    * @date 2020/6/16
+   * @author : chenguang
    * @desc : 模拟(双指针)，将和前一个不一样的数字排序到index位置
    */
   /**

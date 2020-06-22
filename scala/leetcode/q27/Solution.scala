@@ -12,8 +12,8 @@ object Solution {
   }
 
   /**
-   * @author : chenguang
    * @date 2020/6/16
+   * @author : chenguang
    * @desc : 模拟(双指针)，将不等于val的值都挪动到index位置
    */
   /**

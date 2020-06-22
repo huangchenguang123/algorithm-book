@@ -12,8 +12,8 @@ object Solution {
   }
 
   /**
-   * @author : chenguang
    * @date 2020/6/17
+   * @author : chenguang
    * @desc : 经典2分查找法
    */
   /**

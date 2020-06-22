@@ -12,8 +12,8 @@ object Solution {
   }
 
   /**
-   * @author : chenguang
    * @date 2020/6/17
+   * @author : chenguang
    * @desc : subString实现，还有其他更加优秀的算法
    */
   /**

@@ -12,8 +12,6 @@ object Solution {
 
   /**
    * @date: 2020/5/24
-   * @param:
-   * @return:
    * @author: chenguang
    * @desc: 模拟
    */
