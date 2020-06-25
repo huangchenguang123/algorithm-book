@@ -12,12 +12,12 @@ object Solution {
   }
 
   /**
-   * @date 2020/6/16
-   * @author : chenguang
-   * @desc : 模拟(双指针)，将不等于val的值都挪动到index位置
+   * @date: 2020/6/16
+   * @author: chenguang
+   * @desc: 模拟(双指针)，将不等于val的值都挪动到index位置
    */
   /**
-   * @date 2020/6/16
+   * @date: 2020/6/16
    * @result: true
    * @time: 80%
    * @memory usage: 100%

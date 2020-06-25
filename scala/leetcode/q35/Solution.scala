@@ -12,12 +12,12 @@ object Solution {
   }
 
   /**
-   * @date 2020/6/17
-   * @author : chenguang
-   * @desc : 经典2分查找法
+   * @date: 2020/6/17
+   * @author: chenguang
+   * @desc: 经典2分查找法
    */
   /**
-   * @date 2020/6/17
+   * @date: 2020/6/17
    * @result: true
    * @time: 100%
    * @memory usage: 100%

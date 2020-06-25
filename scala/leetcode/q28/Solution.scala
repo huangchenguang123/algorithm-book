@@ -12,12 +12,12 @@ object Solution {
   }
 
   /**
-   * @date 2020/6/17
-   * @author : chenguang
-   * @desc : subString实现，还有其他更加优秀的算法
+   * @date: 2020/6/17
+   * @author: chenguang
+   * @desc: subString实现，还有其他更加优秀的算法
    */
   /**
-   * @date 2020/6/17
+   * @date: 2020/6/17
    * @result: true
    * @time: 80%
    * @memory usage: 100%
