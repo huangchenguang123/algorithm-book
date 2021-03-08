@@ -7,10 +7,10 @@ package leetcode.offer5;
  *
  * 请实现一个函数，把字符串 s 中的每个空格替换成"%20"。
  */
-public class SolutionJ {
+public class SolutionJOffer5 {
 
     public static void main(String[] args) {
-        System.out.println(new SolutionJ().replaceSpace("We are happy."));
+        System.out.println(new SolutionJOffer5().replaceSpace("We are happy."));
     }
 
     public String replaceSpace(String s) {

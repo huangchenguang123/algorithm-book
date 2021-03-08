@@ -7,10 +7,10 @@ package leetcode.offer10_1;
  *
  * 写一个函数，输入 n ，求斐波那契（Fibonacci）数列的第 n 项（即 F(N)）
  */
-public class SolutionJ {
+public class SolutionJOffer10_1 {
 
     public static void main(String[] args) {
-        System.out.println(new SolutionJ().fib(5));
+        System.out.println(new SolutionJOffer10_1().fib(5));
     }
 
     public int fib(int n) {

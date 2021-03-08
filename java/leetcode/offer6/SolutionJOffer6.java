@@ -9,7 +9,7 @@ import java.util.Stack;
  *
  * 输入一个链表的头节点，从尾到头反过来返回每个节点的值（用数组返回）。
  */
-public class SolutionJ {
+public class SolutionJOffer6 {
 
     public static void main(String[] args) {
 
