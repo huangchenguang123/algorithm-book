@@ -48,34 +48,38 @@ public class Mutex implements Lock {
         }
     }
 
+    // 仅需要将操作代理到Sync上即可
+    private final Sync sync = new Sync();
+
+
     @Override
     public void lock() {
-
+        sync.acquire(1);
     }
 
     @Override
     public void lockInterruptibly() throws InterruptedException {
-
+        sync.acquireInterruptibly(1);
     }
 
     @Override
     public boolean tryLock() {
-        return false;
+        return sync.tryAcquire(1);
     }
 
     @Override
     public boolean tryLock(long time, TimeUnit unit) throws InterruptedException {
-        return false;
+        return sync.tryAcquireSharedNanos(1, time);
     }
 
     @Override
     public void unlock() {
-
+        sync.release(1);
     }
 
     @Override
     public Condition newCondition() {
-        return null;
+        return sync.newCondition();
     }
 
 }
