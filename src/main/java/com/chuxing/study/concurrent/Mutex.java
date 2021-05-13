@@ -46,36 +46,55 @@ public class Mutex implements Lock {
         Condition newCondition() {
             return new ConditionObject();
         }
+
     }
+
+    private static final Sync SYNC = new Sync();
 
     @Override
     public void lock() {
-
+        SYNC.acquire(1);
     }
 
     @Override
     public void lockInterruptibly() throws InterruptedException {
-
+        SYNC.acquireInterruptibly(1);
     }
 
     @Override
     public boolean tryLock() {
-        return false;
+        return SYNC.tryAcquire(1);
     }
 
     @Override
     public boolean tryLock(long time, TimeUnit unit) throws InterruptedException {
-        return false;
+        return SYNC.tryAcquireNanos(1, time);
     }
 
     @Override
     public void unlock() {
-
+        SYNC.release(1);
     }
 
     @Override
     public Condition newCondition() {
-        return null;
+        return SYNC.newCondition();
+    }
+
+    public static void main(String[] args) {
+        Mutex mutex = new Mutex();
+        for (int i = 0; i <= 20; i++) {
+            new Thread(() -> {
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                mutex.lock();
+                System.out.println(Thread.currentThread().getName() + "get mutex");
+                mutex.unlock();
+            }, "Thread:" + i).start();
+        }
     }
 
 }
