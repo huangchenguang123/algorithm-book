@@ -46,39 +46,56 @@ public class Mutex implements Lock {
         Condition newCondition() {
             return new ConditionObject();
         }
+
     }
 
-    // 仅需要将操作代理到Sync上即可
-    private final Sync sync = new Sync();
+    private static final Sync SYNC = new Sync();
 
     @Override
     public void lock() {
-        sync.acquire(1);
+        SYNC.acquire(1);
     }
 
     @Override
     public void lockInterruptibly() throws InterruptedException {
-        sync.acquireInterruptibly(1);
+        SYNC.acquireInterruptibly(1);
     }
 
     @Override
     public boolean tryLock() {
-        return sync.tryAcquire(1);
+        return SYNC.tryAcquire(1);
     }
 
     @Override
     public boolean tryLock(long time, TimeUnit unit) throws InterruptedException {
-        return sync.tryAcquireSharedNanos(1, time);
+        return SYNC.tryAcquireNanos(1, time);
     }
 
     @Override
     public void unlock() {
-        sync.release(1);
+        SYNC.release(1);
     }
 
     @Override
     public Condition newCondition() {
-        return sync.newCondition();
+        return SYNC.newCondition();
+    }
+
+    public static void main(String[] args) {
+        Mutex mutex = new Mutex();
+        for (int i = 0; i <= 5; i++) {
+            new Thread(() -> {
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                mutex.lock();
+                System.out.println(Thread.currentThread().getName() + "lock mutex");
+                System.out.println(Thread.currentThread().getName() + "unlock mutex");
+                mutex.unlock();
+            }, "Thread:" + i).start();
+        }
     }
 
 }
