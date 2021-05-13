@@ -83,7 +83,7 @@ public class Mutex implements Lock {
 
     public static void main(String[] args) {
         Mutex mutex = new Mutex();
-        for (int i = 0; i <= 20; i++) {
+        for (int i = 0; i <= 5; i++) {
             new Thread(() -> {
                 try {
                     Thread.sleep(1000);
@@ -91,7 +91,8 @@ public class Mutex implements Lock {
                     e.printStackTrace();
                 }
                 mutex.lock();
-                System.out.println(Thread.currentThread().getName() + "get mutex");
+                System.out.println(Thread.currentThread().getName() + "lock mutex");
+                System.out.println(Thread.currentThread().getName() + "unlock mutex");
                 mutex.unlock();
             }, "Thread:" + i).start();
         }
