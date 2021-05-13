@@ -51,7 +51,6 @@ public class Mutex implements Lock {
     // 仅需要将操作代理到Sync上即可
     private final Sync sync = new Sync();
 
-
     @Override
     public void lock() {
         sync.acquire(1);
