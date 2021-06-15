@@ -1,7 +1,5 @@
 package com.chuxing.study.leetcode;
 
-import java.util.Arrays;
-
 /**
  * @date 2021/6/2
  * @author chenguang 
@@ -24,13 +22,15 @@ public class Offer07 {
         if (preFrom < 0 || preFrom >= preorder.length
             || preTo < 0 || preTo >= preorder.length
             || innerFrom < 0 || innerFrom >= inorder.length
-            || innerTo < 0 || innerTo >= inorder.length) {
+            || innerTo < 0 || innerTo >= inorder.length
+            || preFrom > preTo
+            || innerFrom > innerTo) {
             return null;
         }
         TreeNode root = new TreeNode(preorder[preFrom]);
         int leftSize = 0;
         for (int i = innerFrom; i <= innerTo; i++) {
-            if (leftSize == inorder[i]) {
+            if (root.val == inorder[i]) {
                 break;
             }
             leftSize++;
