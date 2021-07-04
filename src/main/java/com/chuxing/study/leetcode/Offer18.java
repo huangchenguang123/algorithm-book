@@ -25,16 +25,16 @@ public class Offer18 {
         return head;
     }
 
-}
+    private static class ListNode {
 
-class ListNode {
+        int val;
 
-    int val;
+        ListNode next;
 
-    ListNode next;
+        ListNode(int x) {
+            val = x;
+        }
 
-    ListNode(int x) {
-        val = x;
     }
 
 }
