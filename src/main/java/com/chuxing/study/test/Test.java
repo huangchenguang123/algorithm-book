@@ -3,12 +3,11 @@ package com.chuxing.study.test;
 /**
  * @date 2021/5/10
  * @author chenguang
- * @desc main
+ * @desc test
  */
-public class Main {
+public class Test {
 
     public static void main(String[] args) {
-        System.out.println((int) (-1 & 0x7FFFFFFF));
     }
 
 }
