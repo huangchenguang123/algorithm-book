@@ -6,7 +6,7 @@ import java.util.Set;
 /**
  * @date 2021/5/11
  * @author chenguang 
- * @desc 数组中重复的数字
+ * @desc 剑指 Offer 03. 数组中重复的数字
  */
 public class Offer03 {
 

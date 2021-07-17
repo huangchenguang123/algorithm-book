@@ -5,7 +5,7 @@ import java.util.Stack;
 /**
  * @date 2021/7/14
  * @author chenguang
- * @desc 剑指 Offer 35. 包含min函数的栈
+ * @desc 剑指 Offer 30. 包含min函数的栈
  */
 public class Offer30 {
 

@@ -3,7 +3,7 @@ package com.chuxing.study.leetcode;
 /**
  * @date 2021/6/28
  * @author chenguang
- * @desc 剑指 Offer 27. 对称的二叉树
+ * @desc 剑指 Offer 28. 对称的二叉树
  */
 public class Offer28 {
 

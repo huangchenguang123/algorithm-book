@@ -6,7 +6,7 @@ import java.util.PriorityQueue;
 /**
  * @date 2021/7/14
  * @author chenguang
- * @desc 剑指 Offer 40. 数据流中的中位数
+ * @desc 剑指 Offer 41. 数据流中的中位数
  */
 public class Offer41 {
 

@@ -7,7 +7,6 @@ package com.chuxing.study.leetcode;
  */
 public class Offer15 {
 
-    // you need to treat n as an unsigned value
     public int hammingWeight(int n) {
         int res = 0;
         while (n != 0) {
